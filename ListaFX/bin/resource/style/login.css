@@ -1,0 +1,66 @@
+.login_container {
+    -fx-background-color: #ffffff;
+}
+
+.login_container_logo {
+    -fx-background-color: #101a72;
+    -fx-alignment: center;
+    -fx-spacing: 5;
+}
+
+.login_container_logo Text {
+    -fx-fill: #ffffff;
+    -fx-font-size: 2.0em;
+}
+
+.login_container_logo FontAwesomeIconView{
+    -fx-fill: #ffffff;
+}
+
+.login_container_dado {
+    -fx-background-color: #ffffff;
+    -fx-alignment: top_center;
+    -fx-padding: 10;
+    -fx-spacing: 5;
+}
+
+.login_container_dado Label {
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+}
+
+.login_container_dado TextField {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 1.2em;
+    -fx-pref-height: 30;
+    -fx-pref-width: 150;
+    -fx-effect: dropshadow(two-pass-box, #808080, 5, 0, 0, 5);
+}
+
+.login_container_dado PasswordField {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 1.2em;
+    -fx-pref-height: 30;
+    -fx-pref-width: 150;
+    -fx-effect: dropshadow(three-pass-box, #808080, 5, 0, 0, 5);
+}
+
+.login_container_dado Button {
+    -fx-background-color: linear-gradient(to right, #101a72, #1e1247);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.1em;
+    -fx-effect: dropshadow(two-pass-box, #808080, 3, 0, 0, 3);
+    -fx-pref-height: 30;
+    -fx-pref-width: 100;
+}
+
+.login_container_dado Button:hover{
+    -fx-cursor: hand;
+}
+
+#erro {
+    -fx-text-fill: #ff0000;
+}

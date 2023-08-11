@@ -1,0 +1,55 @@
+.container_cadastro {
+    -fx-background-color: #ffffff;
+}
+
+.container_cadastro Label {
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 1.5em;
+}
+
+.container_cadastro TextField {
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+    -fx-effect: dropshadow(three-pass-box, #616161, 3, 0, 0, 3);
+}
+
+.container_cadastro PasswordField {
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+    -fx-effect: dropshadow(three-pass-box, #616161, 3, 0, 0, 3);
+}
+
+.container_cadastro RadioButton {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #aaaaaa;
+}
+
+.container_cadastro Button {
+    -fx-background-color: linear-gradient(to left, #101a72, #1e1247);
+    -fx-effect: dropshadow(three-pass-box, #616161, 2, 0, 0, 6);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.5em;
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+}
+
+.container_cadastro Button:hover{
+    -fx-cursor: hand;
+}
+
+#erroCadastro {
+    -fx-text-fill: #ff0000;
+}
+
+.container_cadastro_login {
+    -fx-padding: 10;
+    -fx-spacing: 5;
+    -fx-border-color: #616161;
+    -fx-border-width: 0 0 0  1;
+}
+
+
+
+

@@ -1,0 +1,21 @@
+.container_contato {
+    -fx-background-color: #ffffff;
+}
+
+.container_contato_painel {
+    -fx-background-color: #eeeeee;
+    -fx-effect: dropshadow(two-pass-box, #aaaaaa, 5, 5, 0, 3);
+}
+
+#whatsapp{
+    -fx-fill: #33ff00;
+}
+
+#telegram {
+    -fx-fill: #191cc9;
+}
+
+.container_contato_painel Label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+}

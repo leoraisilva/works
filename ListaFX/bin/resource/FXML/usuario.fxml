@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="600.0" styleClass="usuario_container" stylesheets="@../style/usuario.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Control.usuarioControl">
+   <children>
+      <FontAwesomeIconView glyphName="USER" layoutX="28.0" layoutY="55.0" size="30" />
+      <Label fx:id="userLabel" layoutX="125.0" layoutY="27.0" styleClass="lbl" text="" />
+      <Label fx:id="dateLabel" layoutX="423.0" layoutY="36.0" styleClass="date" text="Hoje, 04 de Agosto de 2023" />
+   </children>
+</AnchorPane>
