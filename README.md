@@ -4,5 +4,5 @@
     <li>JavaFX</li>
     <li>SQLite</li>
     <li>FXML</li>
-    <li>Modelagem MVC - Model - View - Control</li>
+    <li>MVC - Model - View - Control</li>
   </ul>
