@@ -3,7 +3,13 @@ package main.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import main.Control.cellContatoControl;
+import main.Control.listaTell;
 import main.view.ViewFactory;
+import main.view.cellView;
+
 
 public class Model {
     private static Model model;
@@ -11,6 +17,8 @@ public class Model {
     private final database dbase;
     private boolean fragResult;
     private usuarioModel dadosUsuario;
+    private cellContatoModel cellModel;
+    private ObservableList<cellContatoModel> lista;
 
 
     public Model(){
@@ -18,6 +26,8 @@ public class Model {
         this.dbase = new database();
         this.fragResult = false;
         this.dadosUsuario = new usuarioModel("", "", "", "", "");
+        this.cellModel = new cellContatoModel("", "", "", "");
+        this.lista = FXCollections.observableArrayList();
     }
 
     public static synchronized Model getInstance(){
@@ -48,6 +58,24 @@ public class Model {
     public usuarioModel getDadosUsuario() {
         return dadosUsuario;
     }
+public ObservableList<cellContatoModel> getLista() {
+    return lista;
+}
+
+public void setLista(){
+    ResultSet resultSet = dbase.cellControl();
+    try{
+        while(resultSet.next()){
+            String nome = resultSet.getString("nome");
+            String tell = resultSet.getString("tell");
+            String whatsapp = resultSet.getString("whatsapp");
+            String telegram = resultSet.getString("telegram");
+            lista.add(new cellContatoModel(nome, tell, whatsapp, telegram));
+        }
+    }catch(SQLException e){
+        e.printStackTrace();
+    }
+}
 
     public void returnValue (String user, String pass){
         ResultSet resultSet = dbase.dadosSQL(user, pass);
@@ -65,6 +93,8 @@ public class Model {
         }
         
     }
+
+
 
     
     public int cadastroContato(String nome, String tell, String whatsapp, String telegram){

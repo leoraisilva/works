@@ -35,8 +35,10 @@ public class adicionarControl implements Initializable {
         valueCadastro(valor);
 
     }
+    
     public void valueCadastro(int valor){
         if(valor == 1){
+            falhaContato.setStyle("-fx-text-fill: #00ff00; -fx-font-size: 1.3em; -fx-font-weight: bold;");
             falhaContato.setText("Cadastrado com Sucesso");
         }
         else{

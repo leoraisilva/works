@@ -63,6 +63,7 @@ public class menuControl implements Initializable {
         Stage Stage = (Stage) erroLabel.getScene().getWindow();
         Model.getInstance().getView().showLoginWindow();
         Model.getInstance().getView().getClose(Stage);
+        Model.getInstance().setFrag(false);
     }
     
 }

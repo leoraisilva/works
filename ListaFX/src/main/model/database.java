@@ -85,4 +85,18 @@ public class database {
         return resultado;
     }
 
+    public ResultSet cellControl(){
+        Statement statement;
+        ResultSet resultSet = null;
+        try {
+            statement = connection.createStatement();
+            String sql = "SELECT * FROM contatos;";
+            resultSet = statement.executeQuery(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultSet;
+
+    }
+
 }

@@ -26,7 +26,10 @@ public class cellContatoControl implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
+        usuario.textProperty().bind(cellContato.getNomeContato());
+        tell.textProperty().bind(cellContato.getTellContato());
+        telm.textProperty().bind(cellContato.getTelgContato());
+        wsp.textProperty().bind(cellContato.getWspContato());
     }
     
 }
